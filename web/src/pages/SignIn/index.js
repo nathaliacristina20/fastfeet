@@ -21,9 +21,7 @@ export default function SignIn() {
         email: Yup.string()
             .email()
             .required(),
-        password: Yup.string()
-            .min(6)
-            .required(),
+        password: Yup.string().required(),
     });
 
     async function handleSubmit(data) {
