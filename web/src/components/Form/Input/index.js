@@ -28,7 +28,7 @@ export default function Input({ name, label, formRef, ...rest }) {
                 defaultValue={defaultValue}
                 {...rest}
                 className={error && 'has-error'}
-                onClick={clearFieldError}
+                onFocus={clearFieldError}
             />
             {error && <span className="error">{error}</span>}
         </Container>

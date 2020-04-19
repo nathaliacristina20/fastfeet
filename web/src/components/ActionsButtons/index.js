@@ -16,6 +16,7 @@ export default function ActionsButtons({
     textDelete,
     handleDelete,
     showHandle,
+    showAction,
 }) {
     const [open, setOpen] = useState(false);
     function openToggle() {
@@ -42,7 +43,7 @@ export default function ActionsButtons({
                 <Actions>
                     <Chapeu className={open ? 'opened' : 'closed'} />
                     <ul className={open ? 'opened' : 'closed'}>
-                        {showHandle && (
+                        {showAction && (
                             <li>
                                 <AlertModal
                                     closeActions={openToggle}
@@ -82,6 +83,7 @@ ActionsButtons.propTypes = {
     textDelete: PropTypes.string,
     handleDelete: PropTypes.func,
     showHandle: PropTypes.func,
+    showAction: PropTypes.bool,
 };
 
 ActionsButtons.defaultProps = {
@@ -90,4 +92,5 @@ ActionsButtons.defaultProps = {
     textDelete: '',
     handleDelete() {},
     showHandle() {},
+    showAction: false,
 };

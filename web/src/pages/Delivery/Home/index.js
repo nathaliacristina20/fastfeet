@@ -20,6 +20,9 @@ export default function Deliveries() {
 
     useEffect(() => {
         async function loadDeliveries() {
+            if (page === null) {
+                setPage(1);
+            }
             const { data, headers } = await api.get('deliveries', {
                 params: {
                     page,
@@ -39,9 +42,7 @@ export default function Deliveries() {
     async function handleDelete(id) {
         try {
             await api.delete(`deliveries/${id}`);
-            setDeliveries(deliveries.filter(delivery => delivery.id !== id));
-            setTotalItemsCount(totalItemsCount - 1);
-            setPage(1);
+            setPage(null);
             toast.success('Registro excluido com sucesso.');
         } catch (err) {
             toast.error('Ocorreu um erro ao excluir a encomenda.');
@@ -177,6 +178,7 @@ export default function Deliveries() {
                                                 handleDelete(delivery.id)
                                             }
                                             state={delivery}
+                                            showAction
                                             showHandle={() =>
                                                 viewDelivery(delivery)
                                             }

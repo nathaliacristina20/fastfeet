@@ -123,7 +123,12 @@ export default function Deliveryman({ title, location }) {
                         </Row>
                         <Row>
                             <Column>
-                                <Input type="text" name="name" label="Nome" />
+                                <Input
+                                    type="text"
+                                    name="name"
+                                    label="Nome"
+                                    formRef={formRef}
+                                />
                             </Column>
                         </Row>
                         <Row>

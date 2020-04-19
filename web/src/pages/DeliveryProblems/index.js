@@ -96,6 +96,7 @@ export default function DeliveryProblems() {
                                             handleDelete={() =>
                                                 handleDelete(deliveryProblem.id)
                                             }
+                                            showAction
                                             showHandle={() =>
                                                 viewDeliveryProblem(
                                                     deliveryProblem

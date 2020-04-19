@@ -17,6 +17,9 @@ export default function Recipients() {
 
     useEffect(() => {
         async function loadRecipients() {
+            if (page === null) {
+                setPage(1);
+            }
             const { data, headers } = await api.get('recipients', {
                 params: {
                     page,
@@ -37,9 +40,7 @@ export default function Recipients() {
     async function handleDelete(id) {
         try {
             await api.delete(`recipients/${id}`);
-            setRecipients(recipients.filter(recipient => recipient.id !== id));
-            setTotalItemsCount(totalItemsCount - 1);
-            setPage(1);
+            setPage(null);
             toast.success('Registro excluido com sucesso.');
         } catch (err) {
             toast.error('Ocorreu um erro ao excluir o registro.');
@@ -102,6 +103,7 @@ export default function Recipients() {
                                         <ActionsButtons
                                             pathname={`/destinatarios/${recipient.id}/editar`}
                                             state={recipient}
+                                            showAction={false}
                                             handleDelete={() =>
                                                 handleDelete(recipient.id)
                                             }
