@@ -20,6 +20,9 @@ class RecipientController {
           },
           limit: 5,
           offset: (page - 1) * perPage,
+          order: [
+            ['name', 'ASC'],
+          ],
         });
       } else {
         recipients = await Recipient.findAndCountAll({
@@ -28,6 +31,9 @@ class RecipientController {
           },
           limit: 5,
           offset: (page - 1) * perPage,
+          order: [
+            ['name', 'ASC'],
+          ],
         });
       }
 

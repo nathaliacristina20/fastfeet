@@ -57,6 +57,9 @@ class DeliverymanController {
             ],
             limit: 5,
             offset: (page - 1) * perPage,
+            order: [
+              ['name', 'ASC'],
+            ],
           })
         : await Deliveryman.findAndCountAll({
             where: {
@@ -71,6 +74,9 @@ class DeliverymanController {
             ],
             limit: 5,
             offset: (page - 1) * perPage,
+            order: [
+              ['name', 'ASC'],
+            ],
           });
 
       res.header('X-Total-Count', deliverymans.count);

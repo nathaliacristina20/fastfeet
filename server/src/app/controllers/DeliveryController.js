@@ -132,6 +132,9 @@ class DeliveryController {
         ],
         limit: 5,
         offset: (page - 1) * perPage,
+        order: [
+          ['created_at', 'ASC'],
+        ],
       });
     } else {
       deliveries = await Delivery.findAndCountAll({
@@ -173,6 +176,9 @@ class DeliveryController {
         ],
         limit: 5,
         offset: (page - 1) * perPage,
+        order: [
+          ['created_at', 'ASC'],
+        ],
       });
     }
 
