@@ -10,12 +10,14 @@ export function* signIn({ payload }) {
         const { data } = yield call(api.get, `deliverymans/${deliverymanId}`);
         yield put(signInSuccess(data));
     } catch (err) {
-        if (err.response.status === 400) {
+
+        yield put(signInFailure());
+
+        if (err.response && err.response.status === 400) {
             Alert.alert('Falha', err.response.data.error);
         } else {
-            Alert.alert('Falha', `Ocorreu um erro inesperado.`);
-        }
-        yield put(signInFailure());
+             Alert.alert('Falha', `Ocorreu um erro inesperado.`);
+        }       
     }
 }
 
