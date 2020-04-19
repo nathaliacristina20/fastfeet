@@ -27,9 +27,10 @@
   <li><a href="https://nodejs.org/en/">Node.js</a></li> 
   <li><a href="https://git-scm.com/">Git</a></a></li>  
   <li><a href="https://www.npmjs.com/">npm</a> ou <a href="https://yarnpkg.com/">yarn</a></li>
-  <li><a href="https://expo.io/">Expo</a> ou Emulador Android</li>
+  <li>Emulador Android</li>
   <li><a href="https://mailtrap.io//">Mailtrap</a></li>
-   <li>Docker ou PostgreSQL, MongoDB, Redis</li>
+  <li>Docker ou PostgreSQL, MongoDB, Redis</li>
+  <li>React Native 0.60</li> 
 </ul>
 
 ### Instalação e execução
