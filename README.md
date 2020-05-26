@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Fastfeet" title="Fastfeet" src="https://github.com/Rocketseat/bootcamp-gostack-desafio-02/blob/master/.github/logo.png" width="300px" />
+    <img alt="Fastfeet" title="Fastfeet" src=".github/logo.png" width="300px" />
     <img width="300" align="center" src=".github/gostack.svg">
 </p>
 
@@ -56,7 +56,7 @@ Além das tecnologias abaixo, esta aplicação foi desenvolvida com as melhores 
 ### Pré-requisitos
 
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en/) v10.20 ou maior
+- [Node.js](https://nodejs.org/en/) >= v10.20 
 - [Yarn](https://yarnpkg.com/)
 - Uma instância de [PostgreSQL](https://www.postgresql.org/)
 
@@ -66,8 +66,8 @@ Além das tecnologias abaixo, esta aplicação foi desenvolvida com as melhores 
 
 <i>Antes de executar estes passos, você precisa ter uma instância dos bancos listados acima ou um Docker com as imagens e os databases e schemas criados.</i>
 
-- Clone o repositório ```git clone https://github.com/nathaliacristina20/fastfeet-server.git```
-- Vá até o diretório ```cd fastfeet-server```
+- Clone o repositório ```git clone https://github.com/nathaliacristina20/fastfeet.git```
+- Vá até o diretório ```cd fastfeet```
 - Execute ```yarn``` para instalar as dependências
 - Copie o arquivo .env.example executando ```cp .env.example .env``` para linux ou mac e ```copy .env.example .env``` para windows
 - Abra o arquivo .env e preencha com suas variáveis de ambiente
@@ -77,9 +77,7 @@ Além das tecnologias abaixo, esta aplicação foi desenvolvida com as melhores 
 
 Você pode realizar requisições REST através do Insomnia
 
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Fasfeet&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fnathaliacristina20%2Ffastfeet-server%2Fmaster%2Finsomnia.json)
-
-Caso deseje executar os testes unitários e de integração basta executar ```yarn test``` em seu terminal. Você poderá ver um relatório da cobertura acessando o arquivo ```coverage/lcov-report/index.html```.
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Fasfeet&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fnathaliacristina20%2Ffastfeet%2Fmaster%2Finsomnia.json)
 
 ## :pencil: Como contribuir
 
@@ -87,7 +85,7 @@ Caso deseje executar os testes unitários e de integração basta executar ```ya
 
 ```bash
 # Clone o seu fork
-$ git clone url-do-seu-fork && cd fastfeet-server
+$ git clone url-do-seu-fork && cd fastfeet
 
 # Crie uma branch com sua feature ou correção de bugs
 $ git checkout -b minha-branch
@@ -103,7 +101,7 @@ Depois que o merge da sua pull request for feito, você pode deletar a sua branc
 
 ## :page_with_curl: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo <a href="https://github.com/nathaliacristina20/fastfeet-server/blob/master/LICENSE">LICENSE</a> para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo <a href="https://github.com/nathaliacristina20/fastfeet/blob/master/LICENSE">LICENSE</a> para mais detalhes.
 
 <hr />
 <p>by Nathalia Cristina :wave: <a href="https://linktr.ee/nathaliacristina20">Get in touch!</a></p>
