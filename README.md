@@ -1,6 +1,5 @@
 <p align="center">
     <img alt="Fastfeet" title="Fastfeet" src=".github/logo.svg" width="300px" />
-    <img width="300" align="center" src=".github/gostack.svg">
 </p>
 
 <h3 align="center">
