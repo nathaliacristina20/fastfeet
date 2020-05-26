@@ -1,11 +1,7 @@
 <p align="center">
-    <img alt="Fastfeet" title="Fastfeet" src=".github/logo.png" width="300px" />
+    <img alt="Fastfeet" title="Fastfeet" src=".github/logo.svg" width="300px" />
     <img width="300" align="center" src=".github/gostack.svg">
 </p>
-
-<h1 align="center">
-    Fastfeet
-</h1>
 
 <h3 align="center">
 Plataforma de gerenciamento de entregas
